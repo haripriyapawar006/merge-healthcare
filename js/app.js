@@ -1,45 +1,55 @@
-const carousel = document.querySelector('.carousel');
-let sliders = [];
+ const carousel = document.querySelector('.carousel');
+  let sliders = [];
 
-let slideIndex = 0; // to track current slide index.
+  let slideIndex = 0; // to track current slide index.
 
-const createSlide = () => {
-    if (slideIndex >= movies.length) {
-        slideIndex = 0;
-    }
+  const createSlide = () => {
+      if (slideIndex >= movies.length) {
+          slideIndex = 0;
+      }
 
-    // creating DOM element
-    let slide = document.createElement('div');
-    let imgElement = document.createElement('img');
+      // creating DOM element
+      let slide = document.createElement('div');
+     let imgElement = document.createElement('img');
 
-    // attaching all elements
-    imgElement.appendChild(document.createTextNode(''));
-    slide.appendChild(imgElement);
-    carousel.appendChild(slide);
+      // attaching all elements
+      imgElement.appendChild(document.createTextNode(''));
+      slide.appendChild(imgElement);
+      carousel.appendChild(slide);
+      // setting up image
+      imgElement.src = movies[slideIndex].image;
+      slideIndex++;
 
-    // setting up image
-    imgElement.src = movies[slideIndex].image;
-    slideIndex++;
+      // setting elements classname
+      slide.className = 'slider';
 
-    // setting elements classname
-    slide.className = 'slider';
+      sliders.push(slide);
 
-    sliders.push(slide);
+     if (sliders.length) {
+          sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${10 * (sliders.length - 2)}px)`;
+      }
+  }
 
-    if (sliders.length) {
-        sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${10 * (sliders.length - 2)}px)`;
-    }
-}
+  for (let i = 0; i < 3; i++) {
+      createSlide();
+  }
 
-for (let i = 0; i < 3; i++) {
-    createSlide();
-}
+  setInterval(() => {
+      createSlide();
+ }, 10000); 
 
-setInterval(() => {
-    createSlide();
-}, 10000);
+// let currentIndex = 0;
+// const slides = document.querySelectorAll('.slide');
+// const totalSlides = slides.length;
 
+// setInterval(() => {
+//     slides.forEach((slide, index) => {
+//         slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+//     });
+//     currentIndex = (currentIndex + 1) % totalSlides;
+// }, 3000);
 //side navigation bar
+
 
 jQuery(document).ready(function () {
 

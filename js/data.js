@@ -1,20 +1,20 @@
-let movies = [
-    {
-        image: 'img/banner/banner1.webp'
-    },
-    {
-        image: 'img/banner/banner2.webp'
-    },
-    {
-        image: 'img/banner/banner3.webp'
-    },
-    {
-        image: 'img/banner/banner4.webp'
-    },
-    {
-        image: 'img/banner/banner5.webp'
-    },
-    {
-        image: 'img/banner/banner6.webp'
-    }
+ let movies = [
+     {
+         image: 'img/banner/centered_doctor_banner.png'
+     },
+      {
+      image: 'img/banner/doc.jpeg'
+      },
+      {
+        image: 'img/banner/docc3.webp'
+     },
+      {
+      image: 'img/banner/docc2.jpg'
+      },
+      {
+          image: 'img/banner/fin-doc1.webp' 
+            },
+     {
+          image: 'img/banner/docc1.jpg'
+     }
 ]

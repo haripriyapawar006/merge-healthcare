@@ -1,0 +1,32 @@
+64-> <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="text">Purchase History<br>
+                    <div class="subtext">View all your bookings & Purchases</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+ 74-></a>
+75->
+  <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="tv-outline"></ion-icon>
+                </div>
+                <div class="text">Stream Library<br>
+                    <div class="subtext">Rented & Purchased Movies</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+85->            </a>
+119-><a href="#">
+                <div class="lefticon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <div class="text">BookASmile</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+127-></a>
